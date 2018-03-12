@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width,maximum-scale=2">
+  <meta name="description" content="Francesca Kee Fine Art : ">
+  <title> About </title>
+  <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/blueimp-gallery.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+  <body>
+    <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+
+<!-- HEADER -->
+
+<div id="header_wrap" class="outer">
+    <header class="inner">
+
+      <a id="cart_banner" href="http://francesca-kee.artistwebsites.com/"> Shop </a>
+      <h1 id="project_title">Francesca Kee Fine Art</h1>
+      <h2 id="project_tagline"></h2>
+    </header>
+        <nav class="navbar navbar-inverse">
+          <div class="container page-padding padd-rem">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse padd-rem" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="/" class="">Home</a></li>
+                <li><a href="/#gallery">Gallery</a></li>
+                <li><a href="/about/" class="myactive">About</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+</div>
+
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p><br /></p>
+
+<h1 id="about">About</h1>
+<p><br /></p>
+
+<p><strong>Francesca Kee</strong> is an oil painter who came from Taiwan. She has lived and traveled to several states in US and abroad. She paints things she likes and places she has been.</p>
+
+<p>Her work can be found in the private collections in Taiwan and United States’ art enthusiasts. Recently she had numerous group and solo exhibitions in the Bay Area and Seattle. She currently resides in Seattle.</p>
+
+<h3 id="art-exhibitions">Art Exhibitions:</h3>
+
+<ul>
+  <li>North Seattle College Student exhibition, 2011</li>
+  <li>Seattle North Gate Festival solo exhibition, 2011</li>
+  <li>Triton Museum out door exhibition, June 2014</li>
+  <li>East Valley Artists’ Annual Fine Art Show and Sale, August 2014</li>
+  <li>Los Gatos Art Association Fall Members Juried Show, November 2014 to February 2015.</li>
+  <li>South Bay Philharmonic Orchestra and Art solo show, November 2014</li>
+  <li>Chinese Art Society Annual Exhibition, December 2014</li>
+  <li>Trianon Theatre Gallery Exhibit, May to July 2015</li>
+  <li>Magnolia Summerfest Art show, August 2015</li>
+</ul>
+
+<h3 id="art-contests">Art Contests:</h3>
+
+<ul>
+  <li>Themed Painting Contest winning once, 2014.</li>
+  <li>Best International Art Contest winning 4 times, 2014.</li>
+  <li>Work of Art Galleria Art Contest winning 2 times, 2014.</li>
+  <li>World Selected Artist Art Contest winning 3 times, 2014.</li>
+  <li>International Master of Art Contest winning 1 time, 2014.</li>
+  <li>The Seattle Times Fall Arts Guide contest 3 paintings accepted, 2015</li>
+</ul>
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+  <footer class="inner">
+    
+    <p><a href="https://www.facebook.com/francesca.kee"><i class="fa fa-facebook icons" aria-hidden="true"></i></a><a href="http://www.linkedin.com/in/francescakee"><i class="fa fa-linkedin icons" aria-hidden="true"></i></a><a href="mailto:fineart@francescakee.com"><i class="fa fa-envelope icons" aria-hidden="true"></i></a><a href="https://twitter.com/francescakee"><i class="fa fa-twitter icons" aria-hidden="true"></i></a></p>
+    <p> Copyright © 2013-2015 by Francesca Kee Fine Art. All rights reserved.</p>
+      <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.blueimp-gallery.min.js"></script>
+    <script>
+    document.getElementById('links').onclick = function (event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement,
+            link = target.src ? target.parentNode : target,
+            options = {index: link, event: event},
+            links = this.getElementsByTagName('a');
+        blueimp.Gallery(links, options);
+    };
+    $('#blueimp-gallery').on('closed', function (event) {
+        $("body").css('overflow','auto');
+    });
+    blueimp.Gallery(
+        document.getElementById('carousel-links').getElementsByTagName('a'),
+        {
+            container: '#blueimp-gallery-carousel',
+            carousel: true
+        }
+    );
+    </script>
+  </footer>
+</div>
+
+  </body>
+</html>
